@@ -12,12 +12,28 @@
    <div><%= f.label :cnic %><br />
   <%= f.text_field :cnic %></div>
 
+  <div>
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  </div>
+
+  <h4>Location</h4>
+  <div>
+    <%= f.label :longitude %>
+    <%= f.text_field :add_longitude %>
+  </div>
+  <div>
+    <%= f.label :latitude %>
+    <%= f.text_field :add_latitude %>
+  </div>
+  <br>
+
 
   <div><%= f.label :password %><br />
     <%= f.password_field :password, autocomplete: "off" %></div>
 
   <div><%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %></div>
+  <%= f.password_field :password_confirmation, autocomplete: "off" %></div>
 
   <div><%= f.submit "Sign up" %></div>
 <% end %>
